@@ -1,12 +1,12 @@
 :root {
   --ink: #222222;
-  --paper: #f7f5f0;
-  --paper-deep: #eee8df;
-  --camel: #c19a6b;
-  --camel-dark: #9d784b;
-  --red: #b3202f;
+  --paper: #fffafa;
+  --paper-deep: #f7e7ea;
+  --camel: #c9778a;
+  --camel-dark: #9f5365;
+  --red: #b3204a;
   --line: rgba(34, 34, 34, 0.16);
-  --white: #fffdfa;
+  --white: #fffefe;
 }
 
 * {
@@ -47,8 +47,8 @@ main {
 
 .brand img {
   display: block;
-  width: 128px;
-  height: 70px;
+  width: 150px;
+  height: 86px;
   object-fit: contain;
   object-position: left center;
 }
@@ -89,8 +89,8 @@ nav a {
 }
 
 .hero-logo {
-  width: min(360px, 78vw);
-  height: 196px;
+  width: min(420px, 82vw);
+  height: 242px;
   object-fit: contain;
   margin-bottom: 18px;
 }
@@ -211,7 +211,7 @@ h2 {
 }
 
 .price-row.featured {
-  background: var(--paper-deep);
+  background: linear-gradient(90deg, var(--paper-deep), rgba(247, 231, 234, 0.35));
 }
 
 .price-row h3 {
@@ -319,8 +319,8 @@ textarea {
 }
 
 .site-footer img {
-  width: 124px;
-  height: 68px;
+  width: 152px;
+  height: 88px;
   object-fit: contain;
   object-position: left center;
 }
@@ -351,8 +351,8 @@ textarea {
   }
 
   .brand img {
-    width: 108px;
-    height: 58px;
+    width: 126px;
+    height: 72px;
   }
 
   .hero {
@@ -361,8 +361,8 @@ textarea {
   }
 
   .hero-logo {
-    width: min(280px, 82vw);
-    height: 154px;
+    width: min(315px, 84vw);
+    height: 182px;
   }
 
   .hero-actions {
