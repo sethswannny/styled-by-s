@@ -5,8 +5,9 @@
   --camel: #efc7d0;
   --camel-dark: #9f6b76;
   --red: #b56d7c;
-  --line: rgba(34, 34, 34, 0.16);
+  --line: rgba(34, 34, 34, 0.11);
   --white: #fffefe;
+  --muted: #6f6264;
 }
 
 * {
@@ -41,14 +42,14 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 22px 0 16px;
+  padding: 18px 0 14px;
   border-bottom: 1px solid var(--camel);
 }
 
 .brand img {
   display: block;
-  width: 150px;
-  height: 86px;
+  width: 134px;
+  height: 44px;
   object-fit: contain;
   object-position: left center;
 }
@@ -69,17 +70,17 @@ nav a {
 
 .nav-button {
   border: 1px solid var(--camel);
-  border-radius: 4px;
-  padding: 12px 18px;
+  border-radius: 999px;
+  padding: 11px 17px;
   color: var(--camel-dark);
 }
 
 .hero {
-  min-height: 620px;
+  min-height: 520px;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 80px 0 72px;
+  padding: 70px 0 58px;
   border-bottom: 1px solid var(--camel);
 }
 
@@ -89,10 +90,10 @@ nav a {
 }
 
 .hero-logo {
-  width: min(420px, 82vw);
-  height: 242px;
+  width: min(330px, 78vw);
+  height: 108px;
   object-fit: contain;
-  margin-bottom: 18px;
+  margin-bottom: 44px;
 }
 
 .eyebrow {
@@ -112,17 +113,18 @@ p {
 }
 
 h1 {
-  max-width: 880px;
-  margin-bottom: 16px;
-  font-size: clamp(2.8rem, 7vw, 5.6rem);
-  line-height: 0.95;
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: clamp(2.05rem, 5vw, 4rem);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
 .hero-copy {
-  max-width: 640px;
+  max-width: 560px;
   margin-bottom: 30px;
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .hero-actions {
@@ -138,10 +140,10 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
+  min-height: 50px;
   border: 0;
-  border-radius: 4px;
-  padding: 14px 34px;
+  border-radius: 999px;
+  padding: 13px 30px;
   background: var(--camel);
   color: var(--ink);
   font: inherit;
@@ -158,7 +160,7 @@ h1 {
 .text-link {
   font-weight: 800;
   text-decoration-color: var(--camel);
-  text-underline-offset: 8px;
+  text-underline-offset: 6px;
 }
 
 .promo {
@@ -167,22 +169,43 @@ h1 {
 }
 
 .intro {
-  padding: 44px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 26px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.intro p {
-  max-width: 880px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: clamp(1.25rem, 3vw, 2.2rem);
+.intro div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+}
+
+.intro span {
+  display: inline-grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--paper-deep);
+  color: var(--camel-dark);
+  font-size: 0.78rem;
   font-weight: 700;
-  line-height: 1.18;
+}
+
+.intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 700;
 }
 
 .prices,
 .contact {
-  padding: 74px 0;
+  padding: 64px 0;
   border-bottom: 1px solid var(--camel);
 }
 
@@ -193,7 +216,7 @@ h1 {
 
 h2 {
   margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
 }
 
@@ -203,10 +226,10 @@ h2 {
 
 .price-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 20px;
   align-items: center;
-  padding: 22px 28px;
+  padding: 21px 24px;
   border-bottom: 1px solid var(--camel);
 }
 
@@ -222,12 +245,31 @@ h2 {
 .price-row p {
   max-width: 700px;
   margin: 0;
-  color: rgba(34, 34, 34, 0.78);
+  color: var(--muted);
 }
 
 .price-row strong {
   font-size: 1.25rem;
   white-space: nowrap;
+}
+
+.pick-link {
+  justify-self: end;
+  border: 1px solid var(--camel);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--camel-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pick-link:hover,
+.pick-link:focus-visible {
+  background: var(--paper-deep);
 }
 
 .add-on h3::after {
@@ -248,6 +290,7 @@ h2 {
 
 .contact-copy > p:not(.eyebrow) {
   max-width: 450px;
+  color: var(--muted);
   font-size: 1.08rem;
 }
 
@@ -275,6 +318,13 @@ dd {
   font-weight: 700;
 }
 
+.tiny-note {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .contact-form {
   display: grid;
   gap: 16px;
@@ -293,7 +343,7 @@ select,
 textarea {
   width: 100%;
   border: 1px solid rgba(34, 34, 34, 0.28);
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 13px 14px;
   background: var(--white);
   color: var(--ink);
@@ -319,8 +369,8 @@ textarea {
 }
 
 .site-footer img {
-  width: 152px;
-  height: 88px;
+  width: 134px;
+  height: 44px;
   object-fit: contain;
   object-position: left center;
 }
@@ -351,18 +401,18 @@ textarea {
   }
 
   .brand img {
-    width: 126px;
-    height: 72px;
+    width: 118px;
+    height: 40px;
   }
 
   .hero {
-    min-height: 560px;
-    padding: 56px 0;
+    min-height: 500px;
+    padding: 50px 0;
   }
 
   .hero-logo {
-    width: min(315px, 84vw);
-    height: 182px;
+    width: min(280px, 78vw);
+    height: 92px;
   }
 
   .hero-actions {
@@ -373,10 +423,25 @@ textarea {
     width: 100%;
   }
 
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 20px 0;
+  }
+
+  .intro div {
+    justify-content: flex-start;
+  }
+
   .price-row {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px 16px;
+  }
+
+  .pick-link {
+    justify-self: stretch;
+    text-align: center;
   }
 
   .contact {
