@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
   <title id="title">Styled by S mark</title>
   <desc id="desc">A blush pink circle with an italic black S.</desc>
-  <circle cx="90" cy="90" r="74" fill="#F1C8CF"/>
+  <circle cx="90" cy="90" r="74" fill="#F8DDE3"/>
   <text x="88" y="128" fill="#222222" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" font-style="italic" text-anchor="middle">S</text>
 </svg>
